@@ -1,0 +1,19 @@
+{
+  "name": "minpubsub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "babel --optional runtime --stage 2 -d lib src",
+    "test": "node --harmony lib/test/module.js | faucet"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-runtime": "^5.8.24"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.2.0"
+  }
+}
